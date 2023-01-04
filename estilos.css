@@ -1,0 +1,71 @@
+body{
+    
+    background-color: brown;
+   
+    display: flex;
+    justify-content: center;
+    
+  
+    
+}
+
+.container{
+    border: solid black;
+    width: 800px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor1{
+    display: flex;
+    flex-direction: row;
+    background-color: antiquewhite;
+    height: 70%;
+    justify-content: center;
+    
+}
+
+.carga-contenedor{
+    background-color: rgb(229,254,72);
+    width: 50%;
+    
+   
+}
+
+.movimientos-contenedor{
+    background-color: rgb(96,106,32);
+    width: 50%;
+}
+
+.contenedor2{
+    
+    background-color: chocolate;
+    display: flex;
+    justify-content: center;
+    height: 100px; 
+}
+
+.saldos-contenedor{
+     
+    background-color: blueviolet;
+    
+}
+
+@media (max-width: 500px){
+    
+    .contenedor1{
+        display: flex;
+        flex-direction: column;
+        
+        
+       
+        
+    }
+    .contenedor2{
+    
+        background-color: chocolate;
+       
+       
+    }
+}
