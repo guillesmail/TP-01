@@ -27,20 +27,31 @@ body{
 }
 
 .carga-contenedor{
-    background-color: rgb(229,254,72);
     width: 50%;
+    background: rgb(229,255,71);
+    background: -moz-linear-gradient(22deg, rgba(229,255,71,1) 35%, rgba(122,209,77,1) 75%);
+    background: -webkit-linear-gradient(22deg, rgba(229,255,71,1) 35%, rgba(122,209,77,1) 75%);
+    background: linear-gradient(22deg, rgba(229,255,71,1) 35%, rgba(122,209,77,1) 75%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e5ff47",endColorstr="#7ad14d",GradientType=1);
     
    
 }
 
 .movimientos-contenedor{
-    background-color: rgb(96,106,32);
+    background-color: rgb(29,34,35);
     width: 50%;
+    
+}
+
+.movimientos-contenedor div{
+    color: white;
+    background-color: rgb(46,49,55);
+
 }
 
 .contenedor2{
     
-    background-color: chocolate;
+    background-color: black;
     display: flex;
     justify-content: center;
     height: 100px; 
@@ -52,20 +63,46 @@ body{
     
 }
 
+/* desde acá responsive -500px*/
+
 @media (max-width: 500px){
     
+    .container{
+        flex-direction: column-reverse;
+    }
     .contenedor1{
         display: flex;
         flex-direction: column;
-        
-        
-       
-        
+
+            
     }
-    .contenedor2{
+    .carga-contenedor{
+        width: 100%;
+        height: 100%;
+        background: rgb(229,255,71);
+        background: -moz-linear-gradient(22deg, rgba(229,255,71,1) 0%, rgba(122,209,77,1) 100%);
+        background: -webkit-linear-gradient(22deg, rgba(229,255,71,1) 0%, rgba(122,209,77,1) 100%);
+        background: linear-gradient(22deg, rgba(229,255,71,1) 0%, rgba(122,209,77,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e5ff47",endColorstr="#7ad14d",GradientType=1);
+    }
     
-        background-color: chocolate;
-       
-       
+    .movimientos-contenedor{
+        background-color: rgb(96,106,32);
+        width: 100%;
+        height: 100%;
     }
+    
+    .contenedor2{
+        background-color: chocolate;
+        display: flex;
+        justify-content: center;
+        height: 100px; 
+    }
+    
+    .saldos-contenedor{
+         
+        background-color: blueviolet;
+        
+    }
+    
 }
